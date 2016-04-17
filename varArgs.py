@@ -1,4 +1,4 @@
----Python
+####Python
 def f(a, b=10, c=20, *args, **kargs):
     d = args[2] if len(args)>2 else 40
     # if key "x" exists in kargs dict returns its value (kargs["x"]), otherwise returns default value 40
