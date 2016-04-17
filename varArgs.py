@@ -9,3 +9,27 @@ print f(1,2)
 print f(1,2,3,4)
 print f(1,2,3,4,5,x="x")
 print f(1,2,3,4,5,6,7)
+
+
+'''
+-- java
+    public static int f(int k,int inc, int... args) {
+        int sum = 0;        
+        for (int num : args) {
+            sum += num * k;
+            k += inc;
+        }  
+        return sum;
+    }
+    
+    --- javascript 
+    function f(k,inc) {    
+    var sum = 0;   
+    for (num in arguments) {
+        sum += num * k;
+        k += inc;
+    }  
+    return sum;
+    }
+    
+    '''
